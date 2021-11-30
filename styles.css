@@ -1,0 +1,175 @@
+.titre {  
+  color: #cce7f8;
+  margin: 0 auto; 
+    padding: 10px 30px; 
+    text-align:center ;
+    font-family: 'Russo One', sans-serif; 
+    font-size:150px;
+    animation: shining 0.1s alternate infinite;
+}
+
+@keyframes shining {
+  from {
+    text-shadow: 0 0 6px rgba(182, 211, 207, 0.9),
+      0 0 30px rgba(182, 211, 207, 0.3), 0 0 12px rgba(15, 115, 223, 0.5),
+      0 0 21px rgba(15, 115, 223, 0.9), 0 0 34px rgba(15, 115, 223, 0.8),
+      0 0 54px rgba(15, 115, 223, 0.9);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(182, 211, 207, 1),
+      0 0 30px rgba(182, 211, 207, 0.4), 0 0 12px rgba(15, 115, 223, 0.6),
+      0 0 22px rgba(15, 115, 223, 0.8), 0 0 38px rgba(15, 115, 223, 0.9),
+      0 0 60px rgba(15, 115, 223, 1);
+  }
+}
+.titregoodend {  
+  color:  #cce7f8;
+  margin: 0 auto; 
+    padding: 10px 30px; 
+    text-align:center ;
+    font-family: 'Russo One', sans-serif; 
+    font-size: 60px;
+    animation: shining3 0.1s alternate infinite;
+}
+@keyframes shining3 {
+  from {
+    text-shadow: 0 0 6px rgba(182, 211, 207, 0.9),
+      0 0 30px rgba(182, 211, 207, 0.3), 0 0 12px rgba(15, 115, 223, 0.5),
+      0 0 21px rgba(15, 115, 223, 0.9), 0 0 34px rgba(15, 115, 223, 0.8),
+      0 0 54px rgba(15, 115, 223, 0.9);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(182, 211, 207, 1),
+      0 0 30px rgba(182, 211, 207, 0.4), 0 0 12px rgba(15, 115, 223, 0.6),
+      0 0 22px rgba(15, 115, 223, 0.8), 0 0 38px rgba(15, 115, 223, 0.9),
+      0 0 60px rgba(15, 115, 223, 1);
+  }
+}
+
+
+.titrebadend {  
+  color: rgb(255, 221, 215);
+  margin: 0 auto; 
+    padding: 10px 30px; 
+    text-align:center ;
+    font-family: 'Russo One', sans-serif; 
+    font-size: 60px;
+    animation: shining2 0.1s alternate infinite;
+}
+
+@keyframes shining2 {
+  from {
+    text-shadow: 0 0 6px rgba(255, 187, 175, 0.9),
+      0 0 30px rgba(219, 65, 65, 0.3), 0 0 12px rgba(219, 65, 65, 0.5),
+      0 0 21px rgba(219, 65, 65, 0.9), 0 0 34px rgba(219, 65, 65, 0.8),
+      0 0 54px rgba(219, 65, 65, 0.9);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(255, 187, 175, 1),
+      0 0 30px rgba(219, 65, 65, 0.4), 0 0 12px rgba(219, 65, 65, 0.6),
+      0 0 22px rgba(219, 65, 65, 0.8), 0 0 38px rgba(219, 65, 65, 0.9),
+      0 0 60px rgba(219, 65, 65, 1);
+  }
+}
+  
+  
+body { background-image: url("cryostart.jpg"); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Open Sans', sans-serif; font-size: 18px}
+
+#checkcryo{ background-image: url('cryov2.jpg'); }
+#searchroom{ background-image: url('searchroom.jpg'); }
+#flee{ background-image: url('flee.jpg'); }
+#city{ background-image: url('lobbyv2.jpg'); }
+#lobby{ background-image: url('lobby.jpg'); }
+#window{ background-image: url('windowv2.jpeg')}
+#enterroom{ background-image: url('badend1.jpg')}
+#rebellion{ background-image: url('city.jpg')}
+
+
+h1 {color:rgb(255, 255, 255); 
+    margin: 0 auto; 
+    padding: 10px 30px; 
+    text-align:center ;
+    font-family: 'PT Sans Narrow', sans-serif; font-size:45px}
+
+
+.contenu {width:50%; margin:0 auto}
+
+.divblanc { background-color:rgba(255, 255, 255, 0.75); padding: 8px 8px; }
+
+.divnoir { background-color:rgba(0, 0, 0, 0.75); padding: 8px 8px;
+  font-family: 'Open Sans', sans-serif; font-size:20px; color:rgba(255,255,255) }
+
+
+.decision { font-family: 'Open Sans', sans-serif; font-size: 25px;
+            text-align:center ;
+            color:rgba(255, 255, 255)}
+            
+
+:root {
+            --border-radius: 8px;
+            --border-width: 3px;
+            --gradient-1-color: linear-gradient(to right, #11998e, #38ef7d);}
+          
+          .buttons {
+            display: flex;
+            margin: 4em auto;
+            justify-content: space-evenly;}
+          
+          /* Start of button styles */
+          .button {
+            display: block;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            position: relative;
+            transition: all 200ms ease;
+          }
+          
+          .button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: var(--border-width) solid transparent;
+            z-index: -1;
+            margin: calc(var(--border-width) * -1);
+            border-radius: inherit;
+          }
+          
+          .gradient-1.button {
+            /* For some reason, you have to have this sequence of styling attributes to apply the effects */
+            background: var(--gradient-1-color);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* If you try to put the background-clips and text-fill-colors anywhere else, it won't work */
+          }
+          
+          .gradient-1.button::before {
+            background: linear-gradient(#fff, #fff) padding-box, var(--gradient-1-color) border-box;
+          }
+          
+          .gradient-2.button {
+            background: var(--gradient-1-color);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          
+          .gradient-2.button::before {
+            background: linear-gradient(#fff, #fff) padding-box, var(--gradient-1-color) border-box;
+          }
+          .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
+                  
+  
